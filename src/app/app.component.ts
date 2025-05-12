@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
@@ -11,14 +11,14 @@ import { CommonModule } from '@angular/common';
 })
 export class AppComponent {
   title = 'HMR Demo';
-  counter = 0;
+  counter = signal(0);
   name = '';
 
   increment() {
-    this.counter++;
+    this.counter.update((c) => c + 1);
   }
 
   decrement() {
-    this.counter--;
+    this.counter.update((c) => c - 1);
   }
 }
