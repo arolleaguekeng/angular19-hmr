@@ -1,0 +1,29 @@
+<div class="container">
+  <h1>{{ title }}</h1>
+
+  <div class="form-section">
+    <h2>Form Demo</h2>
+    <input type="text" [(ngModel)]="name" placeholder="Enter your name" />
+    @if (name) {
+    <p>Hello, {{ name }}!</p>
+    }
+  </div>
+
+  <div class="counter-section">
+    <h2>Counter Demo</h2>
+    <div class="counter-controls">
+      <button (click)="decrement()">-</button>
+      <span>{{ counter }}</span>
+      <button (click)="increment()">+</button>
+    </div>
+  </div>
+
+  <div class="hmr-info">
+    <p>Try modifying the component while the app is running:</p>
+    <ul>
+      <li>Change the title text</li>
+      <li>Modify the counter buttons</li>
+      <li>Add new styles</li>
+    </ul>
+  </div>
+</div>

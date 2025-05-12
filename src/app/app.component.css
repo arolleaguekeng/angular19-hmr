@@ -1,0 +1,67 @@
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+}
+
+.form-section,
+.counter-section,
+.hmr-info {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.counter-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 4px;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.counter-controls span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  min-width: 3rem;
+  text-align: center;
+}
+
+.hmr-info ul {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.hmr-info li {
+  margin: 0.5rem 0;
+  color: #666;
+}
